@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pl.stanistas.FirstTest" time="6.597" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.class.path" value="C:\Users\stach\IdeaProjects\fast playwright demo\target\test-classes;C:\Users\stach\IdeaProjects\fast playwright demo\target\classes;C:\Users\stach\.m2\repository\com\microsoft\playwright\playwright\1.33.0\playwright-1.33.0.jar;C:\Users\stach\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\stach\.m2\repository\com\microsoft\playwright\driver\1.33.0\driver-1.33.0.jar;C:\Users\stach\.m2\repository\com\microsoft\playwright\driver-bundle\1.33.0\driver-bundle-1.33.0.jar;C:\Users\stach\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\stach\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\stach\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\stach\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\stach\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\stach\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\stach\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\stach\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar;C:\Users\stach\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\stach\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\stach\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\stach\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\stach\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\stach\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\stach\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\stach\AppData\Local\Temp\surefire2266483452515998416\surefirebooter-20240911183933699_3.jar C:\Users\stach\AppData\Local\Temp\surefire2266483452515998416 2024-09-11T18-39-31_920-jvmRun1 surefire-20240911183933699_1tmp surefire_0-20240911183933699_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\stach\IdeaProjects\fast playwright demo\target\test-classes;C:\Users\stach\IdeaProjects\fast playwright demo\target\classes;C:\Users\stach\.m2\repository\com\microsoft\playwright\playwright\1.33.0\playwright-1.33.0.jar;C:\Users\stach\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\stach\.m2\repository\com\microsoft\playwright\driver\1.33.0\driver-1.33.0.jar;C:\Users\stach\.m2\repository\com\microsoft\playwright\driver-bundle\1.33.0\driver-bundle-1.33.0.jar;C:\Users\stach\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\stach\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\stach\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\stach\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\stach\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\stach\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\stach\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\stach\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar;C:\Users\stach\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\stach\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\stach\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\stach\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\stach\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\stach\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\stach\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\stach\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\stach"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\jdk"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\stach\IdeaProjects\fast playwright demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\stach\AppData\Local\Temp\surefire2266483452515998416\surefirebooter-20240911183933699_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="stach"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\stach\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\stach\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="C:\Users\stach\IdeaProjects\fast playwright demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Program Files\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\tools\cmdr\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\jdk/bin;C:\tools\cmdr\vendor\git-for-windows\cmd;C:\tools\cmdr\vendor\conemu-maximus5\ConEmu\Scripts;C:\tools\cmdr\vendor\conemu-maximus5;C:\tools\cmdr\vendor\conemu-maximus5\ConEmu;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\stach\AppData\Local\Microsoft\WindowsApps;C:\tools\cmdr\vendor\git-for-windows\mingw64\bin;C:\tools\cmdr\vendor\git-for-windows\usr\bin;C:\tools\cmdr\vendor\bin;C:\tools\cmdr;C:\tools\jvms;C:\Program Files\jdk\bin;C:\tools\apache-maven-3.9.9\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\stach\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="firstTest" classname="pl.stanistas.FirstTest" time="6.577"/>
+</testsuite>
