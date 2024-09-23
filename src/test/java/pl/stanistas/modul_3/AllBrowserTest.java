@@ -1,11 +1,12 @@
-package pl.stanistas;
+package pl.stanistas.modul_3;
 
 import com.microsoft.playwright.Page;
 import org.junit.jupiter.api.Test;
+import pl.stanistas.common.BaseTest;
 
 import java.nio.file.Paths;
 
-public class AllBrowserTest extends BaseTest  {
+public class AllBrowserTest extends BaseTest {
 
     @Test
     void should_open_supported_browsers_chromium() {

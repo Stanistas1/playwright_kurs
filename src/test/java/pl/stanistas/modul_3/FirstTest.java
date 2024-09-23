@@ -1,6 +1,7 @@
-package pl.stanistas;
+package pl.stanistas.modul_3;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pl.stanistas.common.BaseTest;
 
 class FirstTest extends BaseTest {
 

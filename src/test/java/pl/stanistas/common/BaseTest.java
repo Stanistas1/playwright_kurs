@@ -1,4 +1,4 @@
-package pl.stanistas;
+package pl.stanistas.common;
 
 import com.microsoft.playwright.*;
 import org.junit.jupiter.api.AfterAll;
@@ -16,7 +16,7 @@ public class BaseTest {
     @BeforeAll
     static void beforeAll() {
         pw = Playwright.create();
-        browser = pw.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
+        browser = pw.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
     }
 
     @BeforeEach
