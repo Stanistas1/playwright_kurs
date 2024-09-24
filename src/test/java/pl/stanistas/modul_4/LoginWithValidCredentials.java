@@ -1,5 +1,8 @@
 package pl.stanistas.modul_4;
 
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.assertions.PlaywrightAssertions;
 import org.junit.jupiter.api.Test;
 import pl.stanistas.common.BaseTest;
 
@@ -10,13 +13,9 @@ class LoginWithValidCredentials extends BaseTest {
 
         page.navigate("http://localhost:7080/login");
         page.fill("id=username", "tomsmith");
-        page.fill("id=password", "SuperSecretPassword");
-        page.click("text=Login");
+        page.fill("id=password", "SuperSecretPassword!");
+        page.click("#login button");
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        PlaywrightAssertions.assertThat(page.locator("text=You logged into a secure area!")).isVisible();
     }
 }
