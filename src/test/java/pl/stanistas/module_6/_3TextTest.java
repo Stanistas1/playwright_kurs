@@ -3,7 +3,7 @@ package pl.stanistas.module_6;
 import org.junit.jupiter.api.Test;
 import pl.stanistas.common.BaseTest;
 
-public class _3TextTest extends BaseTest {
+class _3TextTest extends BaseTest {
 
     @Test
     void textTest() {
