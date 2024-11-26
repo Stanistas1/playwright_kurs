@@ -1,10 +1,14 @@
 package pl.stanistas.common;
 
 import com.microsoft.playwright.*;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import com.microsoft.playwright.options.RecordVideoSize;
+import org.junit.jupiter.api.*;
+import utils.StringUtils;
+
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class BaseTest {
 
@@ -20,13 +24,31 @@ public class BaseTest {
     }
 
     @BeforeEach
-    void beforeEach() {
-        context = browser.newContext();
+    void beforeEachBase() {
+        //context = browser.newContext();
+        context = browser.newContext(new Browser.NewContextOptions()
+                .setHttpCredentials("admin", "admin"));
+
+        context.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true)
+                .setSnapshots(true)
+                .setSources(true)
+        );
+
+        //  context = browser.newContext(new Browser.NewContextOptions()
+        //          .setViewportSize(1920, 1080)
+        //          .setRecordVideoDir(Paths.get("videos"))
+        //           .setRecordVideoSize(new RecordVideoSize(1920, 1080)));
+
         page = context.newPage();
     }
 
     @AfterEach
-    void afterEach() {
+    void afterEach(TestInfo testInfo) {
+        String traceName = "traces/trace_"
+                + StringUtils.removeRoundBrackets(testInfo.getDisplayName())
+                + "_" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss")) + ".zip";
+        context.tracing().stop(new Tracing.StopOptions().setPath(Paths.get(traceName)));
         context.close();
     }
 
